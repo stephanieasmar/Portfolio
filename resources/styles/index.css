@@ -4,17 +4,25 @@ html, body {
 }
 
 .navigation-right {
-
+    width: 100%;
+    height: 50px;
+    border: 1px solid red;
 }
 
 .container-main {
-
+    width: 100%;
+    height: 200px%;
+    border: 1px solid yellow;
 }
 
 .container-projects {
-
+    width: 100%;
+    height: 200px;
+    border: 1px solid purple;
 }
 
 .container-skills {
-    
+    width: 100%;
+    height: 200px;
+    border: 1px solid green;
 }
