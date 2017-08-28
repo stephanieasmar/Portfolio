@@ -11,8 +11,11 @@ html, body {
     border: 1px solid red;
 }
 
-.banner img {
-    background-image: url('../images/typing.png');
+.banner {
+    height: 500px;
+    width: 100%;
+    /*background-image: url('../images/typing.png');*/
+    /*background-repeat: no-repeat;*/
 }
 
 .banner-headline {
