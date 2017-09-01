@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Stephanie Asmar</title>
+    <title>Stephanie Asmar | Portfolio</title>
     <!--favicon icon  -->
     <link rel="shortcut icon" href="resources/images/favicon.png" type="image/x-icon">
     <link rel="icon" href="resources/images/favicon.png" type="image/x-icon">
@@ -20,36 +20,53 @@
 <body>
     <!--header  -->
     <header>
-        <div class="navigation-right">
-            <div class="hamburger-menu-container">
-                <!--hamburger icon  -->
-                <button class="hamburger" data-image-role="hamburger">
-                    <img src="" alt="hamburger menu button">
-                </button>
-                <!--exit icon  -->
-                <button class="exit" data-image-role="exit">
-                    <img src="" alt="hamburger menu exit button">
-                </button>
+        <banner class="banner-container">
+            <div class="navigation-left">
+                <div class="my-logo">
+                    <h1>Stephanie Asmar</h1>
+                </div>
+                <!--large menu  -->
+                <div class="large-menu-container">
+                    <span class="active"><a href="">About</a></span>
+                    <span class="active"><a href="">Projects</a></span>
+                    <span class="active"><a href="">Skills</a></span>
+                    <span class="active"><a href="">Contact</a></span>
+                </div>
             </div>
-            <div class="large-menu-container">
-                <span class="active"><a href="">Home</a></span>
-                <span class="active"><a href="">About</a></span>
-                <span class="active"><a href="">Work</a></span>
-                <span class="active"><a href="">Contact</a></span>
+            <div class="navigation-right">
+                <div class="hamburger-menu-container">
+                    <!--hamburger icon  -->
+                    <button class="hamburger" data-image-role="hamburger" data-role="iconButton">
+                        <img src="resources/images/hamburgermenu.png" alt="menu button">
+                    </button>
+                    <!--exit icon  -->
+                    <button class="exit" data-image-role="exit-container">
+                        <img src="resources/images/exit.png" alt="exit out of menu">
+                    </button>
+                </div>
             </div>
+        </banner>
+        <!--hidden menu  -->
+        <div class="menu-container" data-text-role="menu">
+           <ul class="menu-items">
+                <li class="active"><a href="">About</a></li>
+                <li class="active"><a href="">Projects</a></li>
+                <li class="active"><a href="">Skills</a></li>
+                <li class="active"><a href="">Contact</a></li>
+            </ul>
         </div>
     </header>
 
     <!--banner-->
-    <div class="banner">
-        <img src="images/typing.png" alt="banner-image">
-        <h1>Stephanie Asmar</h1>
+    <div class="banner"
+        <img src="" alt="banner-image">
     </div>
 
     <!--main section-->
     <main>
         <div class="container-main">
             <div class="container-about">About Container
+                <p>Stephanie is a jane-of-all-trades turned Full-Stack Software Developer. Through her previous role as an Operations Analyst for a consulting firm, she was exposed to the day-to-day life of Software Engineers. This sparked her passion, and contributed to her pivot into the world of technology, where she plans to stay indefinitely.</p>
                 <div class=""></div>
             </div>
             <div class="container-skills">Skills Container
@@ -61,8 +78,7 @@
             <div class="container-projects">
                 <div id="" class="project">myPhotoAtlas</div>
                 <div id="" class="project">Dasher</div>
-                <!--<div id="" class="project">React Project</div>
-                <div id="" class="project">Final Project</div>-->
+
             </div>
             <div class="container-contact">Contact Container
                 <div class="contact-contact"></div>

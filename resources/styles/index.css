@@ -3,24 +3,102 @@
 html, body {
     height: 100%;
     width: 100%;
+    /*border: 3px solid black;*/
 }
 
-.navigation-right {
-    width: 100%;
-    height: 50px;
-    border: 1px solid red;
+
+.banner-container {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    height: 60px;
 }
+
+.hamburger,
+.exit {
+    background: none;
+    border: none;
+}
+
+.navigation-left,
+.navigation-right {
+    display: flex;
+    align-items: center;
+}
+
+.large-menu-container {
+    display: none;
+}
+
+.hamburger-menu-container {
+    display: flex;
+    align-items: center;
+}
+
+.hamburger,
+.exit {
+    background: none;
+    border: none;
+}
+
+.hamburger img {
+    height: 30px;
+}
+
+.exit img {
+    height: 25px;
+}
+
+.menu-container ul {
+    padding: 0;
+}
+
+.menu-items li {
+    display: flex;
+    justify-content: center;
+    padding-top: 15px;
+}
+
+.menu-items a {
+    margin-bottom: 15px;
+    text-decoration: none;
+    font-weight: bold;
+
+}
+
+.menu-container li,
+.large-menu-container span,
+.menu-container span {
+    color: black;
+    list-style: none;
+    background-color: lightgray;
+}
+
+.menu-container a{
+    color: black;
+}
+
+.menu-container {
+    display: unset;
+}
+
+.large-menu-container {
+    display: none;
+}
+
+
+
+
+/*BANNER IMAGE*/
 
 .banner {
     height: 500px;
     width: 100%;
-    /*background-image: url('../images/typing.png');*/
-    /*background-repeat: no-repeat;*/
 }
 
-.banner-headline {
 
-}
+/*CONTAINERS*/
 
 .container-main {
     display: flex;
@@ -31,19 +109,20 @@ html, body {
 .container-about {
     width: 100%;
     height: 200px;
-    border: 1px solid black;
+    /*border: 1px solid black;*/
 }
 
 .container-skills {
     width: 100%;
     height: 200px;
-    border: 1px solid yellow;
+    /*border: 1px solid yellow;*/
+    background-color: whitesmoke;
 }
 
 .container-education {
     width: 100%;
     height: 200px;
-    border: 1px solid blue;
+    /*border: 1px solid blue;*/
 }
 
 .container-projects {
@@ -53,7 +132,8 @@ html, body {
     justify-content: space-around;
     width: 100%;
     height: 100%;
-    border: 1px solid purple;
+    /*border: 1px solid purple;*/
+    background-color: whitesmoke;
 }
 
 .project {
@@ -61,18 +141,20 @@ html, body {
     height: 300px;
     margin-top: 25px;
     margin-bottom: 25px;
+    background-color: white;
     border: 1px solid purple;
 }
 
 .container-contact {
     width: 100%;
     height: 200px;
-    border: 1px solid green;
+    /*border: 1px solid green;*/
 }
 
 .footer-container {
     height: 50px;
     width: 100%;
+    background-color: whitesmoke;
 }
 
 
