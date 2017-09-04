@@ -121,14 +121,32 @@ html, body {
 .container-about {
     width: 100%;
     height: 200px;
-    border: 1px solid black;
 }
 
 .container-skills {
+    display: flex;
+    flex-direction: row;
+    flex-flow: wrap;
+    justify-content: center;
     width: 100%;
-    height: 200px;
+    height: 300px;
     background-color: whitesmoke;
-    border: 1px solid black;
+}
+
+.icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+}
+
+.icon h3 {
+    margin-top: 1px;
+}
+
+.icon i {
+    font-size: 2em;
 }
 
 .container-education {
@@ -168,7 +186,7 @@ html, body {
 
 /*FOOTER*/
 
-.footer-container {
+/*.footer-container {
     height: 50px;
     width: 100%;
     background-color: whitesmoke;
@@ -178,7 +196,7 @@ html, body {
 .footer p {
     width: 200px;
     float: right;
-}r
+}*/
 
 
 
