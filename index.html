@@ -8,12 +8,12 @@
     <!--favicon icon  -->
     <link rel="shortcut icon" href="resources/images/favicon.png" type="image/x-icon">
     <link rel="icon" href="resources/images/favicon.png" type="image/x-icon">
-    <!--<link rel="icon" href="resources/images/favicon.png" type="image/x-icon">
-    <link href="https://fonts.googleapis.com/css?family=Caveat|Raleway|Rock+Salt" rel="stylesheet">-->
+    <link rel="icon" href="resources/images/favicon.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css?family=Arimo" rel="stylesheet">
     <!--NORMALIZE-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.css">
     <!--slick carousel link for images-->
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css"/>
+    <!--<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css"/>-->
     <!--devicon-->
     <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
     <!--css link  -->
@@ -22,20 +22,20 @@
 <body>
     <!--header  -->
     <header>
-        <banner class="banner-container">
-            <div class="navigation-left">
+        <div class="navbar">
+            <div class="nav-left">
                 <div class="my-logo">
                     <h1>Stephanie Asmar</h1>
                 </div>
-                <!--large menu  -->
-                <div class="large-menu-container">
-                    <span class="active"><a href="">About</a></span>
-                    <span class="active"><a href="">Projects</a></span>
-                    <span class="active"><a href="">Skills</a></span>
-                    <span class="active"><a href="">Contact</a></span>
-                </div>
             </div>
-            <div class="navigation-right">
+            <div class="nav-right">
+                <!--large screen menu  -->
+                <div class="large-menu-container">
+                    <div><a href="">About</a></div>
+                    <div><a href="">Projects</a></div>
+                    <div><a href="">Skills</a></div>
+                    <div><a href="">Contact</a></div>
+                </div>
                 <div class="hamburger-menu-container">
                     <!--hamburger icon  -->
                     <button class="hamburger" data-image-role="hamburger" data-role="iconButton">
@@ -47,16 +47,16 @@
                     </button>
                 </div>
             </div>
-        </banner>
-        <!--hidden menu  -->
-        <div class="menu-container" data-text-role="menu">
+        </div>
+        <!--hidden dropdown menu  -->
+        <!--<div class="menu-container" data-text-role="menu">
            <ul class="menu-items">
                 <li class="active"><a href="">About</a></li>
                 <li class="active"><a href="">Projects</a></li>
                 <li class="active"><a href="">Skills</a></li>
                 <li class="active"><a href="">Contact</a></li>
             </ul>
-        </div>
+        </div>-->
     </header>
 
     <!--banner-->
@@ -68,70 +68,72 @@
     <main>
         <div class="container-main">
             <div class="container-about">
-                <!--<h4>Hi, I'm Stephanie.<h4>-->
-                <img src="steph.png" alt="Stephanie-headshot">
+                <img src="resources/images/steph.png" alt="Stephanie-headshot">
+                <h2>Hi, I'm Stephanie.</h2>
                 <p>I'm a jane-of-all-trades turned Full-Stack Software Developer. Through my previous role as an Operations Analyst for a major consulting firm, I was exposed to the day-to-day life of Software Engineers. This sparked my passion, and contributed to my pivot into the world of technology, where I plan to stay indefinitely.</p>
             </div>
             <div class="container-skills">
-                <div class="icon">
+                <div class="skills-icon">
                     <i class="devicon-html5-plain"></i>
                     <h3>HTML5</h3>
                 </div>
-                <div class="icon">
+                <div class="skills-icon">
                     <i class="devicon-css3-plain"></i>
                     <h3>CSS3</h3>
                 </div>
-                <div class="icon">
+                <div class="skills-icon">
                     <i class="devicon-javascript-plain"></i>
                     <h3>JavaScript</h3>
                 </div>
-                <div class="icon">
+                <div class="skills-icon">
                     <i class="devicon-bootstrap-plain"></i>
                     <h3>Bootstrap</h3>
                 </div>
-                <div class="icon">
+                <div class="skills-icon">
                     <i class="devicon-jquery-plain"></i>
                     <h3>jQuery</h3>
                 </div>
-                <div class="icon">
+                <div class="skills-icon">
                     <i class="devicon-python-plain"></i>
                     <h3>Python</h3>
                 </div>
-                <div class="icon">
+                <div class="skills-icon">
                     <i class="devicon-postgresql-plain"></i>
                     <h3>PostgreSQL</h3>
                 </div>
-                <div class="icon">
+                <div class="skills-icon">
                     <i class="devicon-nodejs-plain"></i>
                     <h3>Node.js</h3>
                 </div>
-                <div class="icon">
+                <div class="skills-icon">
                     <i class="devicon-express-original"></i>
                     <h3>Express.js</h3>
                 </div>
-                <div class="icon">
+                <div class="skills-icon">
                     <i class="devicon-react-plain"></i>
                     <h3>React</h3>
                 </div>
-                <div class="icon">
+                <div class="skills-icon">
                     <i class="devicon-git-plain"></i>
                     <h3>Git</h3>
                 </div>
-                <div class="icon">
+                <div class="skills-icon">
                     <i class="devicon-amazonwebservices-plain"></i>
                     <h3>AWS</h3>
                 </div>
             </div>
-            <!--<div class="container-education">Education Container
+            <div class="container-education">
                 <div class=""></div>
-            </div>-->
+            </div>
             <div class="container-projects">
-                <div id="" class="project">myPhotoAtlas</div>
-                <div id="" class="project">Dasher</div>
+                <div id="" class="project"></div>
+                <div id="" class="project"></div>
 
             </div>
-            <div class="container-contact">Contact Container
-                <div class="contact-contact"></div>
+            <div class="container-contact">
+                <div class="contact-icon">
+                    <i class="devicon-github-plain"></i>
+                </div>
             </div>
         </div>
     </main>
@@ -140,7 +142,7 @@
     <!--footer-->
     <footer>
         <div class="footer-container">
-            <p></p>
+            <p>Designed & Developed by Stephanie Asmar 2017</p>
         </div>
     </footer>
     
