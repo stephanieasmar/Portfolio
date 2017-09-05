@@ -21,8 +21,9 @@ html, body {
 }
 
 .my-logo h1 {
-    background-color: black;
-    color: white;
+    /*background-color: black;*/
+    /*color: white;*/
+    color: #D5DFEC;;
     padding: 3px;
     margin: 0;
 }
@@ -108,7 +109,7 @@ html, body {
 }
 
 .banner img {
-    height: 300px;
+    height: 250px;
     width: 100%
 
 }
@@ -136,7 +137,7 @@ html, body {
     width: 150px;
     border-radius: 100%;
     border: 10px solid white;
-    margin-top: -40px;
+    margin-top: -60px;
 }
 
 .container-about h2 {
@@ -158,6 +159,8 @@ html, body {
     width: 100%;
     height: 300px;
     background-color: whitesmoke;
+    /*background-color: #D5DFEC;*/
+    /*background-color: #ECF1F7;*/
     padding: 5px;
 }
 
@@ -222,9 +225,21 @@ html, body {
     width: 100%;
     height: 100%;
     background-color: whitesmoke;
+    /*background-color: #D5DFEC;*/
+    /*background-color: #ECF1F7;*/
     margin-top: 25px;
     margin-bottom: 25px;
     margin: 0;
+}
+
+.container-projects p {
+    margin-bottom: 0;
+    margin-top: 15px;
+    font-weight: bolder;
+    font-size: 1.75em;
+    /*background-color: black;*/
+    color: white;
+    padding: 5px;
 }
 
 .project {
@@ -264,9 +279,16 @@ html, body {
     align-items: center;
 }
 
-.contact-info h3 {
-    font-weight: bold;
+.contact-info h4 {
+    margin-bottom: 5px;
+    margin-top: 20px;
+    font-weight: bolder;
+    font-size: 1.75em;
+    /*background-color: black;*/
+    color: #D5DFEC;
+    padding: 5px;
 }
+
 
 .contact-info p {
     width: 300px;
@@ -291,6 +313,7 @@ html, body {
     font-size: .75em;
     margin-top: 20px;
     font-weight: bold;
+    /*color: #D5DFEC;;*/
 }
 
 .footer-container img {
@@ -304,22 +327,374 @@ html, body {
 
 
 
+/*** Media Queries Below ***/
+
+@media only screen and (min-width: 568px) {
+
+/*BANNER IMAGE*/
+
+.banner {
+    height: 350px;
+}
+
+.banner img {
+    height: 350px;
+}
+
+/*CONTAINERS*/
+
+.container-about img {
+    height: 200px;
+    width: 200px;
+    margin-top: -100px;
+}
+
+.container-about p {
+    margin: 10px;
+    height: 200px;
+    width: 500px;
+    line-height: 1.5;
+}
+
+.digitalcrafts h4 {
+    margin-left: 50px;
+    width: 200px;
+}
+
+.umass h4 {
+    margin-left: 15px;
+}
+
+.umass img {
+    width: 125px;
+    height: 125px;
+    margin-top: 50px;
+    margin-right: 50px;
+}
+
+.digitalcrafts img {
+    height: 100px;
+    width: 200px;
+    margin-top: 70px;
+}
+
+.project {
+    width: 450px;
+    height: 350px;
+    background-color: white;
+    margin: 5%;
+}
+
+}
+
+
+
+@media only screen and (min-width: 768px) {
+    
+/*BANNER IMAGE*/
+
+.banner {
+    height: 400px;
+}
+
+.banner img {
+    height: 400px;
+}
+
+/*CONTAINERS*/
+
+.container-about {
+    height: 400px;
+}
+
+.container-about h2 {
+    margin-left: -550px;
+    margin-top: -25px;
+    font-size: 2.5em;
+}
+
+.container-about img {
+    height: 250px;
+    width: 250px;
+    margin-top: -125px;
+    margin-left: 55%;
+}
+
+
+.container-about p {
+    margin: 10px;
+    height: 250px;
+    width: 800px;
+    line-height: 2em;
+    font-size: 1.25em;
+    margin-left: -60px;
+}
+
+.skills-icon {
+    width: 100px;
+    height: 50px;
+    margin: 15px;
+}
+
+.skills-icon h3 {
+    font-size: 1.25em;
+}
+
+.skills-icon i {
+    font-size: 3.5em;
+}
+
+.container-education {
+    width: 100%;
+    height: 350px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.digitalcrafts h4 {
+    margin-left: 150px;
+}
+
+.umass h4 {
+    margin-left: 50px;
+}
+
+.umass img {
+    width: 200px;
+    height: 200px;
+    margin-top: 50px;
+    margin-right: 50px;
+}
+
+.digitalcrafts img {
+    height: 150px;
+    width: 300px;
+    margin-top: 100px;
+    margin-left: 50px;
+}
+
+.container-projects p {
+    font-size: 2.25em;
+    margin-top: 25px;
+}
+
+.project {
+    width: 750px;
+    height: 550px;
+    background-color: white;
+    margin: 5%;
+}
+
+.project img {
+    width: 100%;
+    height: 100%;
+}
+
+.container-contact {
+    height: 250px;
+}
+
+.contact-icon img {
+    height: 75px;
+    width: 75px;
+    margin-top: 0;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    background-color: white;
+}
+
+.contact-info h4 {
+    margin-bottom: 10px;
+    margin-top: 30px;
+    font-size: 2.25em;
+}
+
+.contact-info p {
+    width: 700px;
+    margin: 0;
+    font-size: 1.25em;
+}
+
+
+/*FOOTER*/
+
+.footer-container {
+    height: 100px;
+    background-color: whitesmoke;
+}
+
+.footer-container p {
+    font-size: 1.1em;
+    margin-top: 30px;
+    margin-left: 25px;
+}
+
+.footer-container img {
+    height: 25px;
+    width: 25px;
+    margin-top: 27.5px;
+    margin-left: 5px;
+}
+    
+}
 
 
 
 
 
-/****************************************** Media Queries Below ******************************************/
+@media only screen and (min-width: 976px) {
+/*BANNER IMAGE*/
+
+.banner {
+    height: 650px;
+}
+
+.banner img {
+    height: 650px;
+}
+
+/*CONTAINERS*/
+
+.container-about {
+    height: 500px;
+}
+
+.container-about h2 {
+    margin-left: -550px;
+    margin-top: -25px;
+    font-size: 2.5em;
+}
+
+.container-about img {
+    height: 300px;
+    width: 300px;
+    margin-top: -150px;
+    margin-left: 65%;
+    border: 20px solid white;
+}
+
+.container-about p {
+    margin: 10px;
+    height: 250px;
+    width: 800px;
+    line-height: 2em;
+    font-size: 1.25em;
+    margin-left: -60px;
+}
+
+.container-skills {
+    padding: 25px;
+}
+
+.skills-icon {
+    width: 100px;
+    height: 50px;
+    margin: 15px;
+    margin-top: 50px;
+}
+
+.skills-icon h3 {
+    font-size: 1.5em;
+}
+
+.skills-icon i {
+    font-size: 5em;
+}
+
+.container-education {
+    width: 100%;
+    height: 350px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.digitalcrafts h4 {
+    margin-left: 150px;
+}
+
+.umass h4 {
+    margin-left: 50px;
+}
+
+.umass img {
+    width: 200px;
+    height: 200px;
+    margin-top: 50px;
+    margin-right: 50px;
+}
+
+.digitalcrafts img {
+    height: 150px;
+    width: 300px;
+    margin-top: 100px;
+    margin-left: 50px;
+}
+
+.container-projects p {
+    font-size: 2.25em;
+    margin-top: 25px;
+}
+
+.project {
+    width: 750px;
+    height: 550px;
+    background-color: white;
+    margin: 5%;
+}
+
+.project img {
+    width: 100%;
+    height: 100%;
+}
+
+.container-contact {
+    height: 250px;
+}
+
+.contact-icon img {
+    height: 75px;
+    width: 75px;
+    margin-top: 0;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    background-color: white;
+}
+
+.contact-info h4 {
+    margin-bottom: 10px;
+    margin-top: 30px;
+    font-size: 2.25em;
+}
+
+.contact-info p {
+    width: 700px;
+    margin: 0;
+    font-size: 1.25em;
+}
 
 
+/*FOOTER*/
 
+.footer-container {
+    height: 100px;
+    background-color: whitesmoke;
+}
 
+.footer-container p {
+    font-size: 1.1em;
+    margin-top: 30px;
+    margin-left: 25px;
+}
 
-
-
-
-
-
-
-
-/****************************************** Media Queries Above ******************************************/
+.footer-container img {
+    height: 25px;
+    width: 25px;
+    margin-top: 27.5px;
+    margin-left: 5px;
+}
+  
+}
