@@ -137,7 +137,7 @@ html, body {
     width: 150px;
     border-radius: 100%;
     border: 10px solid white;
-    margin-top: -60px;
+    margin-top: -75px;
 }
 
 .container-about h2 {
@@ -291,9 +291,10 @@ html, body {
 
 
 .contact-info p {
-    width: 300px;
-    height: 50px;
+    width: 415px;
+    height: 35px;
     margin: 0;
+    font-size: .8em;
 }
 
 
@@ -309,7 +310,7 @@ html, body {
 }
 
 .footer-container p {
-    width: 100;
+    width: 265px;
     font-size: .75em;
     margin-top: 20px;
     font-weight: bold;
@@ -320,16 +321,25 @@ html, body {
     height: 20px;
     width: 20px;
     border-radius: 100%;
-    margin-top: 15px;
+    margin-top: 18px;
     margin-left: 3px;
 }
 
-
+* {border: 1px solid red;}
 
 
 /*** Media Queries Below ***/
 
-@media only screen and (min-width: 568px) {
+@media only screen and (min-width: 480px) {
+
+.hamburger-menu-container {
+    visibility: hidden;
+}
+
+* {
+    border: 1px solid yellowgreen;
+}
+
 
 /*BANNER IMAGE*/
 
@@ -390,33 +400,38 @@ html, body {
 
 
 @media only screen and (min-width: 768px) {
+
+* {
+    border: 1px solid blue;
+}
+
     
 /*BANNER IMAGE*/
 
 .banner {
-    height: 400px;
+    height: 420px;
 }
 
 .banner img {
-    height: 400px;
+    height: 420px;
 }
 
 /*CONTAINERS*/
 
 .container-about {
-    height: 400px;
+    height: 350px;
 }
 
 .container-about h2 {
-    margin-left: -550px;
+    margin-left: -450px;
     margin-top: -25px;
-    font-size: 2.5em;
+    font-size: 2em;
 }
 
 .container-about img {
-    height: 250px;
-    width: 250px;
-    margin-top: -125px;
+    height: 200px;
+    width: 200px;
+    margin-top: -100px;
     margin-left: 55%;
 }
 
@@ -424,10 +439,10 @@ html, body {
 .container-about p {
     margin: 10px;
     height: 250px;
-    width: 800px;
+    width: 710px;
     line-height: 2em;
-    font-size: 1.25em;
-    margin-left: -60px;
+    font-size: 1.1em;
+    /*margin-left: -10px;*/
 }
 
 .skills-icon {
@@ -437,11 +452,11 @@ html, body {
 }
 
 .skills-icon h3 {
-    font-size: 1.25em;
+    font-size: 1.1em;
 }
 
 .skills-icon i {
-    font-size: 3.5em;
+    font-size: 3.25em;
 }
 
 .container-education {
@@ -457,7 +472,8 @@ html, body {
 }
 
 .umass h4 {
-    margin-left: 50px;
+    width: 200px;
+    
 }
 
 .umass img {
@@ -477,6 +493,7 @@ html, body {
 .container-projects p {
     font-size: 2.25em;
     margin-top: 25px;
+    color: lightgrey;
 }
 
 .project {
@@ -489,6 +506,7 @@ html, body {
 .project img {
     width: 100%;
     height: 100%;
+    border: 2px solid lightgreen
 }
 
 .container-contact {
@@ -496,8 +514,8 @@ html, body {
 }
 
 .contact-icon img {
-    height: 75px;
-    width: 75px;
+    height: 60px;
+    width:60px;
     margin-top: 0;
     margin-left: 20px;
     margin-right: 20px;
@@ -512,29 +530,31 @@ html, body {
 }
 
 .contact-info p {
-    width: 700px;
+    width: 525px;
     margin: 0;
-    font-size: 1.25em;
+    font-size: 1em;
 }
 
 
 /*FOOTER*/
 
 .footer-container {
-    height: 100px;
-    background-color: whitesmoke;
+    height: 50px;
+    font-size: 1em;
 }
 
 .footer-container p {
     font-size: 1.1em;
-    margin-top: 30px;
+    margin-top: 15px;
     margin-left: 25px;
+    width: 300px;
+    font-size: .85em;
 }
 
 .footer-container img {
     height: 25px;
     width: 25px;
-    margin-top: 27.5px;
+    margin-top: 12.5px;
     margin-left: 5px;
 }
     
@@ -545,6 +565,20 @@ html, body {
 
 
 @media only screen and (min-width: 976px) {
+
+* {
+    border: 1px solid purple;
+}
+
+
+.navbar {
+    height: 70px;
+}
+
+.my-logo h1 {
+    font-size: 2.5em;
+}
+
 /*BANNER IMAGE*/
 
 .banner {
@@ -558,7 +592,7 @@ html, body {
 /*CONTAINERS*/
 
 .container-about {
-    height: 500px;
+    height: 450px;
 }
 
 .container-about h2 {
@@ -596,7 +630,7 @@ html, body {
 }
 
 .skills-icon h3 {
-    font-size: 1.5em;
+    font-size: 1.15em;
 }
 
 .skills-icon i {
@@ -612,23 +646,23 @@ html, body {
 }
 
 .digitalcrafts h4 {
-    margin-left: 150px;
+    margin-left: 175px;
 }
 
 .umass h4 {
-    margin-left: 50px;
+    margin-left: 40px;
 }
 
 .umass img {
-    width: 200px;
-    height: 200px;
+    width: 250px;
+    height: 250px;
     margin-top: 50px;
     margin-right: 50px;
 }
 
 .digitalcrafts img {
-    height: 150px;
-    width: 300px;
+    height: 175px;
+    width: 350px;
     margin-top: 100px;
     margin-left: 50px;
 }
@@ -671,30 +705,33 @@ html, body {
 }
 
 .contact-info p {
-    width: 700px;
+    width: 600px;
     margin: 0;
-    font-size: 1.25em;
+    font-size: 1.15em;
 }
 
 
 /*FOOTER*/
 
 .footer-container {
-    height: 100px;
+    height: 75px;
     background-color: whitesmoke;
 }
 
 .footer-container p {
     font-size: 1.1em;
-    margin-top: 30px;
+    margin-top: 15px;
     margin-left: 25px;
+    width: 360px;
+    font-size: 1em;
+    height: 25px;
 }
 
 .footer-container img {
     height: 25px;
     width: 25px;
-    margin-top: 27.5px;
-    margin-left: 5px;
+    margin-top: 15px;
+    margin-left: 3px;
 }
   
 }
