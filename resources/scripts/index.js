@@ -1,5 +1,5 @@
 // when hamburger menu icon is clicked, the hamburger icon hids, the exit icon shows and the menu-container shows slowly
-function clickMenuShow() {
+function showMenu() {
     $HAMBURGER.click(function () {
         $EXIT_ICON.show();
         $(this).hide();
@@ -8,7 +8,7 @@ function clickMenuShow() {
     });
 }
 // when exit icon is clicked, the exit icon hids, the hamburger menu shows, and the menu-container hids slowly
-function clickExitButton() {
+function hideMenu() {
     $EXIT_ICON.click(function () {
         $HAMBURGER.show();
         $(this).hide();
@@ -18,8 +18,8 @@ function clickExitButton() {
 }
 
 function addAboutListeners() {
-    clickMenuShow();
-    clickExitButton();
+    showMenu();
+    hideMenu();
 }
 
 
