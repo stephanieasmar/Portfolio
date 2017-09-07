@@ -16,7 +16,7 @@ html, body {
     align-items: center;
     height: 60px;
     width: 100%;
-    background-color: white;
+    background-color: rgba(255,255,255,0.8);
     margin: 0;
 }
 
@@ -35,13 +35,26 @@ html, body {
     border: none;
 }
 
-.large-menu-container {
+.nav-right {
+    width: 45%;
+    height: 50px;
+}
+
+
+.large-menu-container,
+.menu,
+.menu a  {
     display: none;
+    width: 75px;
 }
 
 .hamburger-menu-container {
     display: flex;
     align-items: center;
+    /*border: 1px solid black;*/
+    width: 80px;
+    margin-left: 70%;
+    margin-top: 10px;
 }
 
 .hamburger,
@@ -75,11 +88,10 @@ html, body {
 }
 
 .menu-container li,
-.large-menu-container span,
-.menu-container span {
+.large-menu-container,
+.menu-container {
     color: black;
     list-style: none;
-    background-color: lightgray;
 }
 
 .menu-container a{
@@ -90,14 +102,11 @@ html, body {
     display: unset;
 }
 
-.large-menu-container {
-    display: none;
-}
-
 .my-logo h1 {
-    margin: 15px;
+    /*margin: 15px;*/
+    font-size: 1.5em;
+    margin-left: 5px;
 }
-
 
 
 
@@ -111,7 +120,6 @@ html, body {
 .banner img {
     height: 250px;
     width: 100%
-
 }
 
 
@@ -131,6 +139,7 @@ html, body {
     width: 100%;
     height: 350px;
 }
+
 
 .container-about img {
     height: 150px;
@@ -157,10 +166,8 @@ html, body {
     flex-flow: wrap;
     justify-content: center;
     width: 100%;
-    height: 300px;
+    height: 275px;
     background-color: whitesmoke;
-    /*background-color: #D5DFEC;*/
-    /*background-color: #ECF1F7;*/
     padding: 5px;
 }
 
@@ -225,8 +232,6 @@ html, body {
     width: 100%;
     height: 100%;
     background-color: whitesmoke;
-    /*background-color: #D5DFEC;*/
-    /*background-color: #ECF1F7;*/
     margin-top: 25px;
     margin-bottom: 25px;
     margin: 0;
@@ -234,16 +239,15 @@ html, body {
 
 .container-projects p {
     margin-bottom: 0;
-    margin-top: 15px;
+    margin-top: 25px;
     font-weight: bolder;
     font-size: 1.75em;
-    /*background-color: black;*/
-    color: white;
+    color: lightgrey;
     padding: 5px;
+    border: 2px solid white;
 }
 
 .project {
-    /*width: 80%;*/
     width: 400px;
     height: 300px;
     background-color: white;
@@ -253,7 +257,7 @@ html, body {
 .project img {
     width: 100%;
     height: 100%;
-
+    border: 2px solid lightgrey;
 }
 
 .container-contact {
@@ -287,14 +291,16 @@ html, body {
     /*background-color: black;*/
     color: #D5DFEC;
     padding: 5px;
+    border: 2px solid #D5DFEC;
 }
 
 
 .contact-info p {
     width: 415px;
-    height: 35px;
+    height: 15px;
     margin: 0;
     font-size: .8em;
+    padding: 10px;
 }
 
 
@@ -321,25 +327,16 @@ html, body {
     height: 20px;
     width: 20px;
     border-radius: 100%;
-    margin-top: 18px;
-    margin-left: 3px;
+    margin-top: 15px;
+    margin-left: 1px;
 }
 
-* {border: 1px solid red;}
+/** {border: 1px solid red;}*/
 
 
 /*** Media Queries Below ***/
 
 @media only screen and (min-width: 480px) {
-
-.hamburger-menu-container {
-    visibility: hidden;
-}
-
-* {
-    border: 1px solid yellowgreen;
-}
-
 
 /*BANNER IMAGE*/
 
@@ -362,8 +359,8 @@ html, body {
 .container-about p {
     margin: 10px;
     height: 200px;
-    width: 500px;
-    line-height: 1.5;
+    width: 450px;
+    /*line-height: 1.5;*/
 }
 
 .digitalcrafts h4 {
@@ -401,46 +398,84 @@ html, body {
 
 @media only screen and (min-width: 768px) {
 
-* {
-    border: 1px solid blue;
+.my-logo h1 {
+    font-size: 2em;
 }
 
-    
+.nav-right {
+    width: 50%;
+}
+
+.large-menu-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    height: 50px;
+    background-color: rgba(255,255,255,0);
+}
+
+.menu {
+    width: 60px;
+    background-color: white;
+    color: black;
+    margin: 5px;
+    padding: 12.5px;
+    font-size: 1.2em;
+    background-color: rgba(255,255,255,0);
+    display: inline;
+}
+
+.menu a {
+    text-decoration: none;
+    background-color: white;
+    color: black;
+    margin: none;
+    background-color: rgba(255,255,255,0);
+    display: inline;
+}
+
+.hamburger-menu-container {
+    display: none;
+} 
+
+
+
 /*BANNER IMAGE*/
 
 .banner {
-    height: 420px;
+    height: 475px;
 }
 
 .banner img {
-    height: 420px;
+    height: 475px;
 }
 
 /*CONTAINERS*/
 
 .container-about {
-    height: 350px;
+    height: 250px;
 }
 
 .container-about h2 {
     margin-left: -450px;
-    margin-top: -25px;
+    margin-top: -50px;
     font-size: 2em;
 }
 
 .container-about img {
     height: 200px;
     width: 200px;
-    margin-top: -100px;
+    margin-top: -125px;
     margin-left: 55%;
 }
 
 
 .container-about p {
     margin: 10px;
-    height: 250px;
+    height: 200px;
     width: 710px;
-    line-height: 2em;
+    /*line-height: 2em;*/
     font-size: 1.1em;
     /*margin-left: -10px;*/
 }
@@ -479,7 +514,7 @@ html, body {
 .umass img {
     width: 200px;
     height: 200px;
-    margin-top: 50px;
+    margin-top: 60px;
     margin-right: 50px;
 }
 
@@ -506,7 +541,6 @@ html, body {
 .project img {
     width: 100%;
     height: 100%;
-    border: 2px solid lightgreen
 }
 
 .container-contact {
@@ -533,6 +567,7 @@ html, body {
     width: 525px;
     margin: 0;
     font-size: 1em;
+    padding: 10px;
 }
 
 
@@ -554,8 +589,8 @@ html, body {
 .footer-container img {
     height: 25px;
     width: 25px;
-    margin-top: 12.5px;
-    margin-left: 5px;
+    margin-top: 10px;
+    /*margin-left: -1px;*/
 }
     
 }
@@ -566,54 +601,50 @@ html, body {
 
 @media only screen and (min-width: 976px) {
 
-* {
-    border: 1px solid purple;
-}
-
-
 .navbar {
-    height: 70px;
+    height: 60px;
 }
 
 .my-logo h1 {
-    font-size: 2.5em;
+    font-size: 2em;
 }
 
 /*BANNER IMAGE*/
 
 .banner {
-    height: 650px;
+    height: 550px;
 }
 
 .banner img {
-    height: 650px;
+    height: 550px;
 }
 
 /*CONTAINERS*/
 
 .container-about {
-    height: 450px;
+    height: 275px;
 }
 
 .container-about h2 {
-    margin-left: -550px;
-    margin-top: -25px;
-    font-size: 2.5em;
+    margin-left: -575px;
+    margin-top: -60px;
+    font-size: 2.25em;
 }
 
 .container-about img {
-    height: 300px;
-    width: 300px;
+    height: 225px;
+    width: 225px;
     margin-top: -150px;
     margin-left: 65%;
     border: 20px solid white;
+    border: 10px solid white;
 }
 
 .container-about p {
     margin: 10px;
-    height: 250px;
+    height: 150px;
     width: 800px;
-    line-height: 2em;
+    /*line-height: 2em;*/
     font-size: 1.25em;
     margin-left: -60px;
 }
@@ -626,7 +657,6 @@ html, body {
     width: 100px;
     height: 50px;
     margin: 15px;
-    margin-top: 50px;
 }
 
 .skills-icon h3 {
@@ -708,6 +738,7 @@ html, body {
     width: 600px;
     margin: 0;
     font-size: 1.15em;
+    padding: 10px;
 }
 
 
@@ -730,8 +761,8 @@ html, body {
 .footer-container img {
     height: 25px;
     width: 25px;
-    margin-top: 15px;
-    margin-left: 3px;
+    margin-top: 10px;
+    margin-left: -5px;
 }
   
 }
