@@ -8,7 +8,7 @@ function showMenu() {
     $HAMBURGER.click(function () {
         $EXIT_ICON.show();
         $(this).hide();
-        // $(".hamburger").hide("slow");
+        $(".hamburger").hide("slow");
         $MENU_CONTAINER.show("slow");
     });
 }
@@ -17,7 +17,7 @@ function hideMenu() {
     $EXIT_ICON.click(function () {
         $HAMBURGER.show();
         $(this).hide();
-        // $(".exit-container").show("slow");
+        $(".exit-container").show("slow");
         $MENU_CONTAINER.hide("slow");
     });
 }
